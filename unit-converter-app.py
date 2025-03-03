@@ -72,7 +72,7 @@ def convert_units(category, value, unit):
         }
         return conversions.get(unit, value)
     elif category == "📐 Height":
-        return value * 3.28084 if unit == "Meters to Feet" else value / 3.28084
+        return value * 3.28084 if unit == "Meters to Feet" else value / 3.28084 
     elif category == "🌡️ Temperature":
         return (value * 9/5) + 32 if unit == "Celsius to Fahrenheit" else (value - 32) * 5/9
 
@@ -93,7 +93,7 @@ value = st.number_input("Enter the value to convert")
 
 if st.button("Convert"):
     result = convert_units(category, value, unit)
-    st.success(f"The result is {result:.2f}")
+    st.success(f"{value} {unit.split(' to ')[0]} is equal to {result:.2f} {unit.split(' to ')[1]}")
 
 # Add Footer using markdown (Working Solution)
 st.markdown("""
