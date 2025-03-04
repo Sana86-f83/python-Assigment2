@@ -48,7 +48,7 @@ st.markdown("### <p class='description'>UniScale ⚖️ – Fast & easy unit con
 st.sidebar.image('images/unit-converter.jpg', use_container_width=True)
 
 # Unit Category Selection
-category = st.sidebar.selectbox("Select a Conversion", [
+category = st.sidebar.selectbox("⚖️ Select a Conversion", [
     "📏 Length", "⚖️ Weight", "🕰️ Time", "📐 Height", "🌡️ Temperature"
 ])
 
