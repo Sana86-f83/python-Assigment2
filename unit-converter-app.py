@@ -30,6 +30,7 @@ def set_bg(local_img_path):
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
+            background-opacity:70%;
         }}
         </style>
         """
@@ -95,11 +96,14 @@ if st.button("Convert"):
     result = convert_units(category, value, unit)
     st.success(f"{value} {unit.split(' to ')[0]} is equal to {result:.2f} {unit.split(' to ')[1]}")
 
-# Add Footer using markdown (Working Solution)
 st.markdown("""
     <hr>
     <div style="text-align: center; padding: 10px; font-size: 18px; color: white;">
         © 2025 | Developed by <b style='color:yellow;font-size:20px;'>Sana Faisal</b> ⚖️
+        <br>
+        <a href="https://www.linkedin.com/in/sana-faisal-developer/" target="_blank" style="color: #4CAF50; text-decoration: none;">
+            Connect on LinkedIn
+        </a>
     </div>
 """, unsafe_allow_html=True)
 
