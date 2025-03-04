@@ -42,7 +42,7 @@ div[data-testid="stSelectbox"] label {
     transition: color 0.3s ease-in-out;
 }
 .title:hover {
-    color: #FF5733;
+    color: #FF5733 !important;
 }
 
 .description {
