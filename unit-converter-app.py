@@ -41,7 +41,7 @@ set_bg("images/background.jpg")
 
 
 # Title and Description with Animations
-st.markdown("<h1 class='title'>🌏⚖️ UniScale ⚖️ </h1>", unsafe_allow_html=True)
+st.markdown("<h1 class='title'>🌏 UniScale ⚖️ </h1>", unsafe_allow_html=True)
 st.markdown("### <p class='description'>UniScale ⚖️ – Fast & easy unit conversion for length, weight, and time! 🚀</p>", unsafe_allow_html=True)
 
 # Sidebar Image

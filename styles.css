@@ -2,12 +2,14 @@
     from { opacity: 0; }
     to { opacity: 1; }
 }
-
+body, [data-testid="stAppViewContainer"] {
+    color: white !important;
+}
 
 .title {
     text-align: center;
     text-transform: uppercase;
-    color:rgb(8, 236, 248);
+    color:white;
     font-weight: bold;
     animation: fadeIn 2s ease-in-out;
     transition: color 0.3s ease-in-out;
