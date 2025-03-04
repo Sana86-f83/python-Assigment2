@@ -43,7 +43,7 @@ set_bg("images/background.jpg")
 
 # Title and Description with Animations
 st.markdown("<h1 class='title'>🌏 UniScale ⚖️ </h1>", unsafe_allow_html=True)
-st.markdown("### <p class='description'>UniScale ⚖️ – Fast & easy unit conversion for length, weight, time, height and temperature! 🚀</p>", unsafe_allow_html=True)
+st.markdown("### <p class='description'>UniScale 🧮 – Fast & easy unit conversion for length, weight, time, height and temperature! 🚀</p>", unsafe_allow_html=True)
 
 # Sidebar Image
 st.sidebar.image('images/unit-converter.jpg', use_container_width=True)
@@ -90,7 +90,7 @@ elif category == "🌡️ Temperature":
     unit = st.selectbox("🌡️ Select a Conversion", ["Celsius to Fahrenheit", "Fahrenheit to Celsius"])
 
 
-value = st.number_input("Enter the value to convert")
+value = st.number_input("🧮 Enter the value to convert")
 
 if st.button("Convert"):
     result = convert_units(category, value, unit)
@@ -102,7 +102,7 @@ st.markdown("""
         © 2025 | Developed by <b style='color:yellow;font-size:20px;'>Sana Faisal</b> ⚖️
         <br>
         <a href="https://www.linkedin.com/in/sana-faisal-developer/" target="_blank" style="color: #4CAF50; text-decoration: none;">
-            Connect on LinkedIn
+            🔗 Connect on LinkedIn
         </a>
     </div>
 """, unsafe_allow_html=True)
